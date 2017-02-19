@@ -7,12 +7,8 @@ namespace LeetCode326_Power_of_Three
         public bool IsPowerOfThree(int n)
         {
             if (n <= 0) return false;
-            
-            var o = (decimal)Math.Log(n, 3);
 
-            var r = o % 1;
-
-            return r == 0;
+            return (decimal)Math.Log(n, 3) % 1 == 0;
         }
     }
 }
