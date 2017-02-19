@@ -12,9 +12,9 @@ namespace LeetCode326_Power_of_Three
         {
             var o = Math.Log(n, 3);
 
-            var p = o % 1;
+            var r = o % 1;
 
-            return p == 0;
+            return r == 0;
         }
     }
 }
