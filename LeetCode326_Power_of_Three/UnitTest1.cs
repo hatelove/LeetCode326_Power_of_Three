@@ -20,6 +20,17 @@ namespace LeetCode326_Power_of_Three
             ShouldBeFalse(n);
         }
 
+        [TestMethod]
+        public void n_is_243_should_be_true()
+        {
+            ShouldBeTrue(243);
+        }
+
+        [TestMethod]
+        public void n_is_0_should_be_false()
+        {
+            ShouldBeFalse(0);
+        }
         private void ShouldBeFalse(int n)
         {
             Assert.IsFalse(new Solution().IsPowerOfThree(n));

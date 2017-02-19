@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LeetCode326_Power_of_Three
 {
@@ -10,7 +6,9 @@ namespace LeetCode326_Power_of_Three
     {
         public bool IsPowerOfThree(int n)
         {
-            var o = Math.Log(n, 3);
+            if (n <= 0) return false;
+            
+            var o = (decimal)Math.Log(n, 3);
 
             var r = o % 1;
 
