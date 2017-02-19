@@ -7,8 +7,10 @@ namespace LeetCode326_Power_of_Three
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void n_is_3_should_be_true()
         {
+            var n = 3;
+            Assert.IsTrue(new Solution().IsPowerOfThree(n));
         }
     }
 }
